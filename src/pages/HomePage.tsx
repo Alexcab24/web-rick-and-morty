@@ -9,7 +9,7 @@ export const HomePage = () => {
       <section className="home-hero">
         <div>
           <h1>Bienvenido a la web de Rick y Morty</h1>
-          <p>Discubre personajes, episodios y más sobre la serie!</p>
+          <p>Descubre personajes, episodios y más sobre la serie!</p>
         </div>
       </section>
       <div className="home-explorer">

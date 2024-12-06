@@ -38,6 +38,7 @@ footer{
     background-color: #1f2937;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    margin-top: 2rem
 }
 
 .footer-container {
@@ -82,3 +83,5 @@ footer{
         gap: 5px;
     }
 }
+
+

@@ -23,7 +23,7 @@ const CharactersCards = () => {
 
 
 
-    if (loading) return <p>Loading...</p>;
+    if (loading) return 
     if (error) return <p>Error: {error.message}</p>;
     return (
         <>
@@ -35,6 +35,8 @@ const CharactersCards = () => {
             />
 
             <div className='characters-cards-container'>
+
+
                 {
                     data.characters.results.map((character: Character) => (
                         <div className='characters-cards' key={character.id}>

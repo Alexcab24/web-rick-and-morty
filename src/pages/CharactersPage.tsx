@@ -3,6 +3,7 @@ import '../styles/characters.css'
 
 
 const CharactersPage = () => {
+  
   return (
     <div className="characters-page">
       <section className="home-hero">
@@ -16,7 +17,7 @@ const CharactersPage = () => {
 
         <CharactersCards />
       </div>
-        
+
     </div>
   )
 }

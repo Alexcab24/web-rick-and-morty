@@ -1,4 +1,4 @@
-import '@fontsource-variable/open-sans';
+// import '@fontsource-variable/open-sans';
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 

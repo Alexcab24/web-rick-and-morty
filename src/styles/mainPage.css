@@ -1,0 +1,151 @@
+.home-hero {
+    background-image: url("/hero.png");
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    position: relative;
+}
+
+.home-hero::before {
+    content: '';
+    background-color: black;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.home-hero  div {
+    height: 100%;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 1rem; 
+}
+
+.home-hero  div h1 {
+    font-size: 2.25rem; 
+    font-weight: bold;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.home-hero  div p {
+    font-size: 1.125rem;
+    color: #d1d5db;
+}
+
+.home-explorer {
+    text-align: center;
+    color: white;
+    margin-top: 40px;
+}
+
+.home-buttons-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 15px;
+    padding: 0px 8rem;
+}
+
+.home-buttons {
+   
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background-color: #1f2937;
+
+}
+
+.home-buttons h3 {
+    font-size: 1.5rem;
+    font: bold;
+    margin-bottom: 1rem;
+}
+
+.home-buttons p{
+    color: #9ca3af;
+    margin-bottom: 1rem
+}
+
+.home-buttons:hover {
+    background-color: #374151; 
+}
+
+.home-buttons a {
+    text-decoration: none;
+    color: white;
+}
+
+.button-1 {
+    color: white;
+    background-color: #2563eb;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 0.25rem;
+}
+
+.button-1:hover{
+    background-color: #3b82f6;
+}
+
+.button-2 {
+    color: white;
+    background-color: #16a34a;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 0.25rem;
+}
+
+.button-2:hover {
+    background-color: #22c55e;
+}
+
+.button-3 {
+    color: white;
+    background-color: #dc2626;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 0.25rem;
+}
+
+.button-3:hover {
+    background-color: #ef4444;
+}
+
+
+/* responsive */
+@media (max-width: 768px) {
+    .home-hero {
+        height: 350px; 
+    }
+
+    .home-hero > div h1 {
+        font-size: 1.75rem; 
+    }
+
+    .home-hero > div p {
+        font-size: 1rem; 
+    }
+}
+
+
+@media (max-width: 480px) {
+    .home-hero {
+        height: 300px; 
+    }
+
+    .home-hero > div h1 {
+        font-size: 1.5rem; 
+    }
+
+    .home-hero > div p {
+        font-size: 0.875rem; 
+    }
+}

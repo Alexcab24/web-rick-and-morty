@@ -23,7 +23,7 @@ const CharactersCards = () => {
 
 
 
-    if (loading) return 
+    if (loading) return
     if (error) return <p>Error: {error.message}</p>;
     return (
         <>

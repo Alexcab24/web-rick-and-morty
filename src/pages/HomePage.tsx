@@ -18,7 +18,7 @@ export const HomePage = () => {
           <div className='home-buttons'>
             <h3>Personajes</h3>
             <p>Ver todos los personajes del programa.</p>
-            <a href="/Characters" className="button-1">
+            <a href="/characters" className="button-1">
               Explora personajes
             </a>
           </div>
@@ -26,14 +26,14 @@ export const HomePage = () => {
           <div className='home-buttons'> 
             <h3>Episodios</h3>
             <p>Navega por la lista de episodios.</p>
-            <a href="/Episodes" className="button-2">
+            <a href="/episodes" className="button-2">
               Ir a los episodios
             </a>
           </div>
           <div className='home-buttons'>
             <h3>Buscar personaje</h3>
             <p>Encuentra detalles de cualquier personaje por su nombre.</p>
-            <a href="/Character" className="button-3">
+            <a href="/character" className="button-3">
               Buscar ahora
             </a>
           </div>

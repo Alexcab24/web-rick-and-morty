@@ -5,8 +5,8 @@ export const Header = () => {
     <header className="header">
       <a href="/" className="headerLogo">Rick and Morty Explorer</a>
       <nav className="headerNav">
-        <a href="/Characters">Personajes</a>
-        <a href="/Episodes">Episodios</a>
+        <a href="/characters">Personajes</a>
+        <a href="/episodes">Episodios</a>
       </nav>
     </header>
   )

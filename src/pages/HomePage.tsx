@@ -1,17 +1,16 @@
 
 
 
+import Banner from '../components/Banner'
 import '../styles/mainPage.css'
 
 export const HomePage = () => {
   return (
     <div className="home">
-      <section className="home-hero">
-        <div>
-          <h1>Bienvenido a la web de Rick y Morty</h1>
-          <p>Descubre personajes, episodios y más sobre la serie!</p>
-        </div>
-      </section>
+      <Banner
+        title='Bienvenido a la web de Rick y Morty'
+        description='Descubre personajes, episodios y más sobre la serie!'
+      />
       <div className="home-explorer">
         <h1>Explora las secciones</h1>
         <div className='home-buttons-container'>
@@ -23,7 +22,7 @@ export const HomePage = () => {
             </a>
           </div>
 
-          <div className='home-buttons'> 
+          <div className='home-buttons'>
             <h3>Episodios</h3>
             <p>Navega por la lista de episodios.</p>
             <a href="/episodes" className="button-2">

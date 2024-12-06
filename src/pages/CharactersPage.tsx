@@ -1,3 +1,4 @@
+import Banner from '../components/Banner'
 import CharactersCards from '../components/CharactersCards'
 import '../styles/characters.css'
 
@@ -6,12 +7,10 @@ const CharactersPage = () => {
   
   return (
     <div className="characters-page">
-      <section className="home-hero">
-        <div>
-          <h1>Personajes</h1>
-          <p>Descubre personajes todos los personajes de esta serie!</p>
-        </div>
-      </section>
+      <Banner
+      title='Personajes'
+      description='Descubre personajes todos los personajes de esta serie!'
+      />
       <div className="characters-container">
         <h2>Personajes</h2>
 

@@ -1,20 +1,18 @@
 import "../styles/episodes.css";
 import EpisodesCards from "../components/EpisodesCards"
+import Banner from "../components/Banner";
 
 
 const EpisodesPage = () => {
   return (
     <div className="episodes-page">
-      <section className="home-hero">
-        <div>
-          <h1>Episodios</h1>
-          <p>Navega y descubre los episodios de esta serie!</p>
-        </div>
-      </section>
-
+      <Banner
+      title="Episodios"
+      description="Navega y descubre los episodios de esta serie!"
+      />
       <section className="episodes-container">
         <h2>Episodios</h2>
-       <EpisodesCards/>
+        <EpisodesCards />
 
       </section>
 

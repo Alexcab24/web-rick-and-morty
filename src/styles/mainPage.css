@@ -59,22 +59,20 @@
 }
 
 .home-buttons {
-   
     padding: 1.5rem;
     border-radius: 0.5rem;
     background-color: #1f2937;
-
 }
 
 .home-buttons h3 {
     font-size: 1.5rem;
-    font: bold;
+    font-weight: bold;
     margin-bottom: 1rem;
 }
 
-.home-buttons p{
+.home-buttons p {
     color: #9ca3af;
-    margin-bottom: 1rem
+    margin-bottom: 1rem;
 }
 
 .home-buttons:hover {
@@ -84,23 +82,24 @@
 .home-buttons a {
     text-decoration: none;
     color: white;
+    font-size: 1rem;
 }
 
 .button-1 {
     color: white;
     background-color: #2563eb;
-    padding: 0.5rem 1rem 0.5rem 1rem;
+    padding: 0.5rem 1rem;
     border-radius: 0.25rem;
 }
 
-.button-1:hover{
+.button-1:hover {
     background-color: #3b82f6;
 }
 
 .button-2 {
     color: white;
     background-color: #16a34a;
-    padding: 0.5rem 1rem 0.5rem 1rem;
+    padding: 0.5rem 1rem;
     border-radius: 0.25rem;
 }
 
@@ -111,7 +110,7 @@
 .button-3 {
     color: white;
     background-color: #dc2626;
-    padding: 0.5rem 1rem 0.5rem 1rem;
+    padding: 0.5rem 1rem;
     border-radius: 0.25rem;
 }
 
@@ -119,11 +118,28 @@
     background-color: #ef4444;
 }
 
+/* Responsive */
+@media (max-width: 1024px) {
+    .home-hero {
+        height: 400px; 
+    }
 
-/* responsive */
+    .home-hero > div h1 {
+        font-size: 1.875rem; 
+    }
+
+    .home-hero > div p {
+        font-size: 1rem;
+    }
+
+    .home-buttons-container {
+        padding: 0 4rem;
+    }
+}
+
 @media (max-width: 768px) {
     .home-hero {
-        height: 350px; 
+        height: 350px;
     }
 
     .home-hero > div h1 {
@@ -133,8 +149,22 @@
     .home-hero > div p {
         font-size: 1rem; 
     }
-}
 
+    .home-buttons-container {
+        padding: 0 2rem;
+    }
+
+    .home-buttons {
+        padding: 1rem;
+    }
+    
+    .home-buttons h3 {
+        font-size: 1.25rem;
+    }
+    .home-buttons a {
+        font-size: 0.875rem; 
+    }
+}
 
 @media (max-width: 480px) {
     .home-hero {
@@ -147,5 +177,22 @@
 
     .home-hero > div p {
         font-size: 0.875rem; 
+    }
+
+    .home-buttons-container {
+        padding: 0 1rem;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .home-buttons {
+        padding: 0.75rem;
+    }
+
+    .home-buttons h3 {
+        font-size: 1.125rem;
+    }
+
+    .home-buttons a {
+        font-size: 0.75rem; 
     }
 }

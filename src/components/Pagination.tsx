@@ -8,7 +8,7 @@ interface Props {
 }
 
 const Pagination = ({ currentPage, totalPages, onPageChange }: Props) => {
-
+  
     const handlePrevious = () => {
         if (currentPage > 1) {
             onPageChange(currentPage - 1);

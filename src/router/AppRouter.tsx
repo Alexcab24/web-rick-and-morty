@@ -16,6 +16,9 @@ const AppRouter = () => {
             <Route path="/characters" element={<CharactersPage />} />
             <Route path="/episodes" element={<EpisodesPage />} />
             <Route path="/character/:id" element={<CharacterPage />} />
+
+
+            <Route path="/*" element={<HomePage />} />
         </Routes>
     )
 }

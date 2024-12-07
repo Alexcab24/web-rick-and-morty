@@ -8,7 +8,7 @@ import { useParams } from "react-router-dom";
 // }
 
 const CharacterCard = () => {
-  const { id = 1 } = useParams<{ id: string }>();
+  const { id  } = useParams<{ id: string }>();
   const { loading, error, data } = useQuery(GET_CHARACTER_BY_ID, {
     variables: { id },
   });

@@ -4,7 +4,7 @@
 
 ## Descripción
 
-Esta aplicación es un explorador de personajes y episodios de la serie **Rick and Morty**. Utiliza React y GraphQL para interactuar con la API de **Rick and Morty** y ofrece las siguientes vistas:
+Esta web es un explorador de personajes y episodios de la serie **Rick and Morty**. Utiliza React y GraphQL para interactuar con la API de **Rick and Morty**. Estas son las vistas:
 
 - **/**: Página principal que proporciona enlaces para navegar a las vistas de personajes, episodios y detalles de los personajes.
 - **/characters**: Muestra una lista de todos los personajes del programa. Puedes navegar a los detalles de cada personaje haciendo clic en su tarjeta.

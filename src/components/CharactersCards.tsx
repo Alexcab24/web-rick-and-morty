@@ -4,6 +4,8 @@ import { GET_CHARACTERS } from "../graphql/queries/getCharacters";
 import { Character } from "../interfaces";
 import { useState } from 'react';
 import Pagination from './Pagination';
+import Loading from './Loading';
+import Error from './Error';
 
 
 
@@ -23,8 +25,8 @@ const CharactersCards = () => {
 
 
 
-    if (loading) return
-    if (error) return <p>Error: {error.message}</p>;
+    if (loading) return <Loading />
+    if (error) return <Error errorMessage={error.message}/>
     return (
         <>
 
@@ -43,7 +45,7 @@ const CharactersCards = () => {
                             <img src={character.image} alt={character.name} />
                             <h3>{character.name}</h3>
                             <p>
-                             {character.species}
+                                {character.species}
                             </p>
                         </div>
                     ))

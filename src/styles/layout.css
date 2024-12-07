@@ -49,6 +49,28 @@ footer{
 }
 
 
+.loading-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.loading-container img {
+    height: 200px;
+    width: auto;
+}
+
+.error-message-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.error-message-container h1{
+font-size: 22px;
+color: white;
+}
+
 
 
 .headerNav a:hover {

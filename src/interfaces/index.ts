@@ -21,11 +21,6 @@ export interface CharacterDetails {
   image: string;
 }
 
-export interface CharacterData {
-  characters: {
-    results: CharacterDetails[];
-  };
-}
 
 export interface Episode {
   id: string;

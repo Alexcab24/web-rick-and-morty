@@ -4,6 +4,7 @@ import Pagination from "./Pagination"
 import { useQuery } from "@apollo/client";
 import { GET_EPISODES } from "../graphql/queries/getEpisodes";
 import { Episode } from "../interfaces";
+import Loading from './Loading';
 
 
 const EpisodesCards = () => {
@@ -23,7 +24,7 @@ const EpisodesCards = () => {
 
 
 
-    if (loading) return
+    if (loading) return <Loading/>
     if (error) return <p>Error: {error.message}</p>;
     return (
         <>

@@ -18,6 +18,15 @@
     padding-right: 1rem;
 }
 
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
 .episode-card {
     background-image: url("/card-background.png");
     background-size: cover;
@@ -25,6 +34,7 @@
     background-color: #1f2937;
     padding: 16px;
     border-radius: 8px;
+    animation: fadeIn 1s ease-in-out;
 }
 
 .episode-card h3 {

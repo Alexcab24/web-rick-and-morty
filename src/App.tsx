@@ -11,9 +11,9 @@ function App() {
 
 
   return (
- <Layout>
-    <AppRouter/>
- </Layout>
+    <Layout>
+      <AppRouter />
+    </Layout>
   )
 }
 

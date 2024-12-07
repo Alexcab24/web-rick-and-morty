@@ -2,12 +2,18 @@ import Banner from "../components/Banner";
 
 import { useState } from "react";
 import "../styles/character.css";
-import CharacterCard from "../components/CharacterCard";
 import CharactersContainer from "../components/CharactersContainer";
+import { Navigate, useParams } from "react-router-dom";
+import CharacterContainer from "../components/CharacterContainer";
 
 
 const CharacterPage = () => {
+  const { id } = useParams<{ id: string }>();
   const [searchName, setSearchName] = useState('');
+
+  if (!id) {
+    return <Navigate to="/character/1" replace />;
+  }
 
 
   return (
@@ -31,7 +37,7 @@ const CharacterPage = () => {
         </div>
 
         {
-          searchName !== "" ? <CharactersContainer searchName={searchName} /> : <CharacterCard />
+          searchName !== "" ? <CharactersContainer searchName={searchName} /> : <CharacterContainer characterId={id} />
         }
 
 

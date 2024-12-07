@@ -8,16 +8,16 @@ export interface Character {
 export interface CharacterDetails {
   id: string;
   name: string;
+  image: string;
   species: string;
-  status: string;
   gender: string;
-  episode: Array<{
-    id: string;
-  }>;
+  status: string;
   location: {
     name: string;
   };
-  image: string;
+  episode: Array<{
+    id: string;
+  }>;
 }
 
 

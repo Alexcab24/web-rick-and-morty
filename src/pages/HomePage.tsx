@@ -32,7 +32,7 @@ export const HomePage = () => {
           <div className='home-buttons'>
             <h3>Buscar personaje</h3>
             <p>Encuentra detalles de cualquier personaje por su nombre.</p>
-            <a href="/character" className="button-3">
+            <a href="/character/1" className="button-3">
               Buscar ahora
             </a>
           </div>

@@ -7,7 +7,7 @@ export const Header = () => {
       <nav className="headerNav">
         <a href="/characters">Personajes</a>
         <a href="/episodes">Episodios</a>
-        <a href="/character">Buscar</a>
+        <a href="/character/1">Buscar</a>
       </nav>
     </header>
   )

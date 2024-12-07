@@ -3,6 +3,7 @@ import Banner from "../components/Banner";
 import { useState } from "react";
 import "../styles/character.css";
 import CharacterCard from "../components/CharacterCard";
+import CharactersContainer from "../components/CharactersContainer";
 
 
 const CharacterPage = () => {
@@ -29,7 +30,11 @@ const CharacterPage = () => {
           />
         </div>
 
-        <CharacterCard  />
+        {
+          searchName !== "" ? <CharactersContainer searchName={searchName} /> : <CharacterCard />
+        }
+
+
 
 
       </div>

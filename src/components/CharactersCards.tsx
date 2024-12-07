@@ -43,11 +43,7 @@ const CharactersCards = () => {
                             <img src={character.image} alt={character.name} />
                             <h3>{character.name}</h3>
                             <p>
-                                Status: <span className={`status-${character.status.toLowerCase()}`}>{character.status}</span>
-                            </p>
-
-                            <p>
-                                Species: {character.species}
+                             {character.species}
                             </p>
                         </div>
                     ))

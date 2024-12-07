@@ -9,7 +9,7 @@ export const HomePage = () => {
     <div className="home">
       <Banner
         title='Bienvenido a la web de Rick y Morty'
-        description='Descubre personajes, episodios y más sobre la serie!'
+        description='¡Descubre personajes, episodios y más sobre la serie!'
       />
       <div className="home-explorer">
         <h1>Explora las secciones</h1>

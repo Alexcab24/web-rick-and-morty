@@ -29,7 +29,7 @@ const CharacterPage = () => {
           />
         </div>
 
-        <CharacterCard searchName={searchName} />
+        <CharacterCard  />
 
 
       </div>

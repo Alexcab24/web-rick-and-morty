@@ -1,10 +1,10 @@
 
 
-const Loading = () => {
+const Loading: React.FC = () => {
   return (
-   <div>
-    <img src="/Rick.gif" alt="rick-loading" />
-   </div>
+    <div className="loading-container">
+      <img src="/Rick.gif" alt="rick-loading" />
+    </div>
   )
 }
 

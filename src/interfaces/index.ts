@@ -2,7 +2,6 @@ export interface Character {
   id: string;
   name: string;
   image: string;
-  status: string;
   species: string;
 }
 
@@ -12,7 +11,7 @@ export interface CharacterDetails {
   species: string;
   status: string;
   gender: string;
-  episode:  Array<{
+  episode: Array<{
     id: string;
   }>;
   location: {

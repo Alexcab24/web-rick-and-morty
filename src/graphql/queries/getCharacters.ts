@@ -3,8 +3,8 @@ import { gql } from "@apollo/client";
 
 
 export const GET_CHARACTERS = gql`
-query getCharacter($page: Int) {
-  characters(page: $page) {
+query getCharacter($name: String, $page: Int) {
+  characters(filter: {name: $name}, page: $page) {
   info {
       count
       pages

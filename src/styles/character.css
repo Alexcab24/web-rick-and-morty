@@ -30,8 +30,9 @@ input {
 }
 
 .character-details-container {
-  display: grid;
-    grid-template-columns: repeat(4, 1fr);
+  display: flex;
+    /* grid-template-columns: repeat(4, 1fr); */
+    justify-content: center;
     gap: 1.5rem;
     padding: 0 2rem;
     max-width: 1600px;

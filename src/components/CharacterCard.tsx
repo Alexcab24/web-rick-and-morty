@@ -1,25 +1,28 @@
 import { useQuery } from "@apollo/client";
-import { GET_CHARACTER_BY_NAME } from "../graphql/queries/getCharacterByName";
-import { CharacterDetails } from "../interfaces";
+import { GET_CHARACTER_BY_ID } from "../graphql/queries/getCharacterById";
 import Loading from "./Loading";
+import { useParams } from "react-router-dom";
 
-interface Props {
-  searchName: string;
-}
+// interface Props {
+//   searchName: string;
+// }
 
-const CharacterCard = ({ searchName }: Props) => {
-  const { loading, error, data } = useQuery(GET_CHARACTER_BY_NAME, {
-    variables: { name: searchName },
+const CharacterCard = () => {
+  const { id } = useParams<{ id: string }>();
+  const { loading, error, data } = useQuery(GET_CHARACTER_BY_ID, {
+    variables: { id },
   });
 
   if (loading) return <Loading />;
   if (error) return <p>Error: {error.message}</p>;
 
+  const character = data.character;
+
   return (
     <>
       <div className="character-details-container">
-        {data?.characters.results.map((character: CharacterDetails) => (
-          <div className="character-details-card" key={character.id}>
+        {/* {data?.character.results.map((character: CharacterDetails) => ( */}
+          <div className="character-details-card">
             <div className="card-image">
               <img
                 src={character.image || "https://via.placeholder.com/300"}
@@ -51,7 +54,7 @@ const CharacterCard = ({ searchName }: Props) => {
               </div>
             </div>
           </div>
-        ))}
+        {/* ))} */}
       </div>
     </>
   );

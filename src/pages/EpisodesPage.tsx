@@ -1,6 +1,6 @@
 import "../styles/episodes.css";
-import EpisodesCards from "../components/EpisodesCards"
 import Banner from "../components/Banner";
+import EpisodesContainer from "../components/EpisodesContainer";
 
 
 const EpisodesPage = () => {
@@ -12,7 +12,9 @@ const EpisodesPage = () => {
       />
       <section className="episodes-container">
         <h2>Episodios</h2>
-        <EpisodesCards />
+      
+
+        <EpisodesContainer/>
 
       </section>
 
